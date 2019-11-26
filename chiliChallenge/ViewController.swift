@@ -57,30 +57,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
       {
-//     numberOfItems = appetizers.count + entrees.count + sides.count + drinks.count
-        
              return 2
     }
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
       {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if item == appetizers[indexPath.row]
-       {
-        cell?.textLabel?.text = item
-        }
-        else if item == entrees[indexPath.row]
-        {
+        if indexPath.section == 0 {
+                     item = appetizers[indexPath.row]
             cell?.textLabel?.text = item
+                  }
+       else if  indexPath.section == 1 {
+            item = entrees[indexPath.row]
+                      cell?.textLabel?.text = item
         }
-        else if item == sides[indexPath.row]
-        {
-            cell?.textLabel?.text = item
+        else if  indexPath.section == 2 {
+                item = sides[indexPath.row]
+                          cell?.textLabel?.text = item
+            }
+        else if  indexPath.section == 3 {
+                item = drinks[indexPath.row]
+                          cell?.textLabel?.text = item
+            }
+        else {
+            print ("cell")
         }
-        else if item == drinks[indexPath.row]
-        {
-            cell?.textLabel?.text = item
-              print (item)
-        }
+        
+
         return cell!
       }
   
