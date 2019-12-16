@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func alert()
     {
         let alertViewResponder: SCLAlertViewResponder = SCLAlertView().showSuccess("Hello Customer", subTitle: "This is your order.")
-        SCLAlertView().showInfo("Important info", subTitle: "You are great")
+        SCLAlertView().showInfo("Important info", subTitle: "You did it")
     }
     
    
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
       {
           let label = UILabel()
-          label.backgroundColor = .lightGray
+          label.backgroundColor = .red
           label.text = sectionTitles[section]
           label.font = UIFont(name: "Times", size: 30)
           return label
@@ -52,12 +52,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
       func numberOfSections(in tableView: UITableView) -> Int
       {
+         
           return 4
       }
       
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
       {
-             return 2
+        if sectionTitles == appetizers
+        {
+            return appetizers.count
+        }
+        else if sectionTitles == entrees
+        {
+            return entrees.count
+        }
+         else if sectionTitles == drinks
+        {
+            return drinks.count
+        }
+         else
+        {
+            return sides.count
+        }
+        
     }
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
       {
@@ -81,7 +98,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         else {
             print ("cell")
         }
-        
+       // cell?.detailTextLabel = "hi"
 
         return cell!
       }
