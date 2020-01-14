@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		AE4A8365237DC3C000B74A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4A8363237DC3C000B74A23 /* Main.storyboard */; };
 		AE4A8367237DC3C100B74A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4A8366237DC3C100B74A23 /* Assets.xcassets */; };
 		AE4A836A237DC3C100B74A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4A8368237DC3C100B74A23 /* LaunchScreen.storyboard */; };
+		AE62432323C641E0001A1079 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62432223C641E0001A1079 /* ViewController2.swift */; };
 		E2CE0693BC02948F3AF36CB6 /* Pods_chiliChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B333B17E2B1837F18C33BA /* Pods_chiliChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		AE4A8366237DC3C100B74A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4A8369237DC3C100B74A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4A836B237DC3C100B74A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE62432223C641E0001A1079 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		C227EA5C57D48C41ADF9BBAA /* Pods-chiliChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chiliChallenge.debug.xcconfig"; path = "Target Support Files/Pods-chiliChallenge/Pods-chiliChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C927B6BF9C1BE13670A3C093 /* Pods-chiliChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chiliChallenge.release.xcconfig"; path = "Target Support Files/Pods-chiliChallenge/Pods-chiliChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +58,6 @@
 				C227EA5C57D48C41ADF9BBAA /* Pods-chiliChallenge.debug.xcconfig */,
 				C927B6BF9C1BE13670A3C093 /* Pods-chiliChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				AE4A835F237DC3C000B74A23 /* SceneDelegate.swift */,
 				AE4A8361237DC3C000B74A23 /* ViewController.swift */,
 				AE4A8363237DC3C000B74A23 /* Main.storyboard */,
+				AE62432223C641E0001A1079 /* ViewController2.swift */,
 				AE4A8366237DC3C100B74A23 /* Assets.xcassets */,
 				AE4A8368237DC3C100B74A23 /* LaunchScreen.storyboard */,
 				AE4A836B237DC3C100B74A23 /* Info.plist */,
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE62432323C641E0001A1079 /* ViewController2.swift in Sources */,
 				AE4A8362237DC3C000B74A23 /* ViewController.swift in Sources */,
 				AE4A835E237DC3C000B74A23 /* AppDelegate.swift in Sources */,
 				AE4A8360237DC3C000B74A23 /* SceneDelegate.swift in Sources */,
